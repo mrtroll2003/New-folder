@@ -1,0 +1,18 @@
+@font-face {
+    font-family: ProRoundedBlack;
+    src: local("SF-Pro-Rounded-Black") url(SF-Pro-Rounded-Black.ttf) format("truetype");
+    font-family: ProRoundedBold;
+    src: url(SF-Pro-Rounded-Bold.ttf) format("truetype");
+    font-family: ProRoundedHeavy;
+    src: url(SF-Pro-Rounded-Heavy.ttf) format("truetype");
+    font-family: ProRoundedMedium;
+    src: url(SF-Pro-Rounded-Medium.ttf) format("truetype");
+    font-family: ProRoundedRegular;
+    src: url(SF-Pro-Rounded-Regular.ttf) format("truetype");
+    font-family: ProTextBold;
+    src: url(SFProText-Bold.ttf) format("truetype");
+    font-family: ProTextRegular;
+    src: url(SFProText-Regular.ttf) format("truetype");
+    font-family: ProTextSemibold;
+    src: url(SFProText-Semibold.ttf) format("truetype");
+}

@@ -91,6 +91,7 @@ export default function Login() {
                 </div>
 
                 <a class="button" href="javascript:void(0);" onClick={handleSubmit}>Login</a>
+                <a class="button" href="javascript:void(0);" >No account? Sign up now</a>
             </form>
 
             <div class="autoLoginContainer">

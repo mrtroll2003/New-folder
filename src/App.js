@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Login from './screens/loginScreen/index'
+import Login from './screens/loginScreen/index';
+import SignUp from './screens/signUpScreen/index'
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -22,9 +23,9 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-function App() {
+function App() {  //Test screens here 
   return (
-    <Login></Login>
+    <SignUp></SignUp>
   );
 }
 

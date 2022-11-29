@@ -69,7 +69,7 @@ export default function Login() {
         <div class="container">
             <img src={IMG_Quarter1} className="topRightDecor" alt="" />
             <img src={IMG_Quarter2} className="bottomLeftDecor" alt="" />
-            <form class="loginContainer">
+            <form class="loginContain">
                 <div class="usernameInput">
                     <img src={IC_User} className="icon" alt="" />
                     <input

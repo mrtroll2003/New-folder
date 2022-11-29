@@ -23,13 +23,13 @@
     flex: auto;
 }
 
-.loginContainer {
+.loginContain {
     position: absolute;
     height: 55.27vh;
     width: 30vw;
     left: 15vw;
     top: 10vh;
-    /*background-color: brown;*/
+    /* background-color: brown; */
     display: flex;
     flex-direction: column;
 }

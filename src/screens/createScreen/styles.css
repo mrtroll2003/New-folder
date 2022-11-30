@@ -1,0 +1,33 @@
+
+.input-name {
+    background-color: lightblue;
+    margin-top: 20px;
+    margin-left: 45px;
+
+}
+.input-relationship {
+    background-color: lightblue;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #21C07D;
+}
+.person-container {
+    width: 50vw;
+    height: 500px;
+    margin: 100px;
+    background-color: #85B6FF;
+}
+.input-age {
+    background-color: lightblue;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.submit-button {
+    margin-top: 20px;
+    margin-left: 200px;
+}

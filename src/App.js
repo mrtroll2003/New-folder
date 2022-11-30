@@ -25,7 +25,7 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 function App() {  //Test screens here 
   return (
-    <SignUp />
+    <Login />
   );
 }
 

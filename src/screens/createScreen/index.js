@@ -60,11 +60,11 @@ function CreateScreen() {
       </form>
       <div className="submit-button">
         <button onClick={(event) => handleSubmit(event)}>
-          <a href="/">Submit</a>
+          <a href="/tree">Submit</a>
         </button>
       </div>
       <Routes>
-        <Route path="/" element={HomeScreen}></Route>
+        <Route path="/tree" element={HomeScreen}></Route>
       </Routes>
     </div>
   );

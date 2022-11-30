@@ -34,7 +34,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/home" element={<HomeScreen />} />
+        <Route path="/tree" element={<HomeScreen />} />
         <Route path="/create" element={<CreateScreen />} />
         <Route path="/sign-up" element={<SignUp />} />
       </Routes>

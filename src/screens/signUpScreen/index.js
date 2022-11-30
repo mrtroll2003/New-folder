@@ -3,7 +3,9 @@ import "./styles.css";
 import { IC_User, IC_Lock } from "../../assets/icons";
 import SnackBar from "react-material-snackbar";
 import ReactSnackBar from "react-js-snackbar";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import HomeScreen from "../home";
 
 export default function SignUp() {
   let auth = getAuth();
@@ -16,7 +18,7 @@ export default function SignUp() {
     setFormValues({ ...formValues, [name]: value });
   };
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
   };
@@ -130,11 +132,13 @@ export default function SignUp() {
           ></input>
         </div>
 
-        <a class="button" href="javascript:void(0);" onClick={handleSubmit}>
+        <a class="button" href="/tree" onClick={handleSubmit}>
           Sign Up
         </a>
       </form>
-
+      <Routes>
+        <Route path="/tree" element={HomeScreen}></Route>
+      </Routes>
       {/* <div class="autoLoginContainer">
                 <a class="optionButton" href="javascript:void(0);" onClick={handleGoogleSubmit}>Sign in with Google</a>
             </div> */}

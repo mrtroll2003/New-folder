@@ -103,7 +103,7 @@ export default function Login() {
           ></input>
         </div>
 
-        <a class="button" href="/home" onClick={handleSubmit}>
+        <a class="button" href="/tree" onClick={handleSubmit}>
           Login
         </a>
         <a class="button" href="/sign-up">
@@ -121,7 +121,7 @@ export default function Login() {
         </a>
       </div>
       <Routes>
-        <Route path="/home" element={HomeScreen}></Route>
+        <Route path="/tree" element={HomeScreen}></Route>
         <Route path="/sign-up" element={SignUp}></Route>
       </Routes>
     </div>

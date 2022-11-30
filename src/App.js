@@ -1,7 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import Login from './screens/loginScreen/index';
-import SignUp from './screens/signUpScreen/index'
+import logo from "./logo.svg";
+import "./App.css";
+import Login from "./screens/loginScreen/index";
+import SignUp from "./screens/signUpScreen/index";
+import CreateScreen from "./screens/createScreen";
+import Navigation from "./routes/Navigation/Nav";
+import HomeScreen from "./screens/home";
+//React Router Methods
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -17,15 +22,23 @@ const firebaseConfig = {
   storageBucket: "family-tree-cd89a.appspot.com",
   messagingSenderId: "144860506030",
   appId: "1:144860506030:web:44242ae385cfd610ff4a3f",
-  measurementId: "G-MMD7KH7R9F"
+  measurementId: "G-MMD7KH7R9F",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-function App() {  //Test screens here 
+function App() {
+  //Test screens here
   return (
-    <Login />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<HomeScreen />} />
+        <Route path="/create" element={<CreateScreen />} />
+        <Route path="/sign-up" element={<SignUp />} />
+      </Routes>
+    </Router>
   );
 }
 

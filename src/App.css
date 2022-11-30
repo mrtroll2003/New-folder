@@ -1,3 +1,8 @@
+.nav-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #21C07D;
+}
 .App {
   text-align: center;
 }
